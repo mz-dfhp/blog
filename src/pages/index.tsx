@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div>首页</div>
+      <div className="p-20px">首页</div>
     </>
   )
 }
