@@ -1,0 +1,31 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true
+  },
+  extends: [
+    'next/core-web-vitals',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended'
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
+  },
+  plugins: ['@typescript-eslint', 'prettier'],
+  rules: {
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'arrow-body-style': 'off',
+    'prefer-arrow-callback': 'off',
+    '@typescript-eslint/no-explicit-any': ['off']
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  }
+}
