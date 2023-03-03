@@ -1,7 +1,14 @@
+import HomeLayouts from '@/components/layouts/homeLayouts'
+import type { ReactElement } from 'react'
+
 export default function Home() {
   return (
-    <>
-      <div className="p-20px">首页</div>
-    </>
+    <div>
+      <div>1</div>
+    </div>
   )
+}
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <HomeLayouts>{page}</HomeLayouts>
 }

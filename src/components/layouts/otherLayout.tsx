@@ -1,13 +1,13 @@
 import Head from 'next/head'
 
-const Layouts: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const OtherLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>mz</title>
+        <title>其他</title>
+        <header>头部</header>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
-      <header>头部</header>
       <main>
         <div>{children}</div>
       </main>
@@ -15,4 +15,4 @@ const Layouts: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   )
 }
 
-export default Layouts
+export default OtherLayout

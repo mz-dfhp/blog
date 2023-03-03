@@ -10,9 +10,7 @@ export default defineConfig({
   ],
   theme: {
     colors: {
-      main: 'rgba(49, 108, 251, 1)',
-      mainBgColor: '#F8F8F8',
-      mainBorderColor: '#D8D8D8'
+      main: '#2c3e50'
     },
     boxShadow: {
       'header-shadow': '0px 6px 12px 0px rgba(49,108,251,0.05);'
