@@ -3,8 +3,8 @@ import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 const HomeThree: React.FC = () => {
   return (
-    <div>
-      <Canvas className="h-500px">
+    <div className="w-150px h-150px">
+      <Canvas className="Canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
         <directionalLight intensity={1} position={[-2, 5, 2]} />
@@ -12,7 +12,7 @@ const HomeThree: React.FC = () => {
           <Sphere visible={true} args={[1, 100, 200]} scale={2}>
             <MeshDistortMaterial
               color="#2c3e50"
-              attach="meterial"
+              attach="material"
               distort={0.3}
               speed={1.5}
               roughness={1}
